@@ -1,0 +1,354 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Angelo Seguin | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101010;
+            color: #eeeeee;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #181818;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 2px solid #b30000;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #dddddd;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #e63939;
+        }
+
+        section {
+            padding: 65px 8%;
+            margin: 25px auto;
+            width: 90%;
+            background: #191919;
+            border-left: 4px solid #b30000;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #e63939;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: #cccccc;
+        }
+
+        #home {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        #home img {
+            width: 165px;
+            height: 165px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #b30000;
+            margin-bottom: 25px;
+        }
+
+        #home h2 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        #home p {
+            font-size: 18px;
+        }
+
+        .highlight {
+            color: #e63939;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 10px 24px;
+            background: #b30000;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #e00000;
+        }
+
+        .about-content {
+            max-width: 850px;
+            font-size: 16px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: #222222;
+            border: 1px solid #393939;
+            border-bottom: 3px solid #b30000;
+            padding: 20px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            color: #eeeeee;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card,
+        .certificate-card {
+            background: #222222;
+            border: 1px solid #383838;
+            transition: 0.2s;
+        }
+
+        .project-card:hover,
+        .certificate-card:hover {
+            border-color: #b30000;
+        }
+
+        .project-card img,
+        .certificate-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-info,
+        .certificate-info {
+            padding: 20px;
+        }
+
+        .project-info h3,
+        .certificate-info h3 {
+            color: #e63939;
+            margin-bottom: 10px;
+        }
+
+        .contact-content p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .contact-content a {
+            color: #e63939;
+            text-decoration: none;
+        }
+
+        .contact-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #181818;
+            color: #aaaaaa;
+            text-align: center;
+            padding: 22px;
+            margin-top: 35px;
+            border-top: 2px solid #b30000;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            #home h2 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 45px 6%;
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mark Angelo</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="meeeeee" alt="Mark Angelo's Profile Picture">
+
+        <h2>Hi, I'm <span class="highlight">Mark Angelo Seguin</span></h2>
+
+        <p>BS Computer Science Student</p>
+
+        <a href="#about" class="btn">About Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about-content">
+            <p>
+                Hello! I'm Mark Angelo C. Seguin, a Computer Science student
+                interested in programming and technology. I'm still learning
+                and improving my skills, especially in web development.
+                I enjoy working on projects, trying new things, and learning
+                from the challenges I encounter along the way.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>
+                        One of my school projects where I applied what I learned
+                        about programming and problem-solving.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>
+                        A project that helped me practice my skills and gain
+                        more experience in creating digital solutions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+
+        <div class="projects-container">
+
+            <div class="certificate-card">
+                <img src="certificate" alt="Certificate">
+
+                <div class="certificate-info">
+                    <h3>Certificate of Completion</h3>
+                    <p>
+                        A certificate from one of my learning activities.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-content">
+            <p>Feel free to contact me through email.</p>
+
+            <p>
+                Email:
+                <a href="mailto:markangeloseguin6@gmail.com">
+                    markangeloseguin6@gmail.com
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mark Angelo Seguin. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
